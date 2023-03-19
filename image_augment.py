@@ -30,4 +30,4 @@ def augment_images(folder_path):
 
         print ("Augmented image: " + image)
 
-augment_images("videos/scissors 3-moviepy")
+augment_images("videos/cats1-moviepy")

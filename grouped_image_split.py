@@ -3,7 +3,7 @@ import shutil
 
 def split_images(source_dir, destination_dir, num_splits):
     # Get a list of all the image files in the source directory
-    image_files = [f for f in os.listdir(source_dir) if f.endswith('.txt') or f.endswith('.xml')]
+    image_files = [f for f in os.listdir(source_dir) if f.endswith('.jpg') or f.endswith('.txt')]
 
     # Determine the number of images per split
     images_per_split = len(image_files) // num_splits
@@ -29,8 +29,8 @@ def split_images(source_dir, destination_dir, num_splits):
             shutil.copyfile(source_path, destination_path)
 
 if __name__ == '__main__':
-    source_dir = 'C:/Users/jeric/Downloads/Compressed/WiderPerson/Yolo Annotations'
-    destination_dir = 'C:/Users/jeric/Downloads/Compressed/WiderPerson/Split_Annotations'
+    source_dir = 'Dataset/Export_MotorDatasetOpenImages/data'
+    destination_dir = 'Dataset/Export_MotorDatasetOpenImages/split'
     num_splits = 3
 
     split_images(source_dir, destination_dir, num_splits)

@@ -3,7 +3,7 @@ import numpy as np
 import os
 from datetime import timedelta
 
-SAVING_FRAMES_PER_SECOND = 1    
+SAVING_FRAMES_PER_SECOND = 3
 
 def format_timedelta(td):
     """Utility function to format timedelta objects in a cool way (e.g 00:00:20.05) 

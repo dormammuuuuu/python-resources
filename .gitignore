@@ -2,3 +2,4 @@ Dataset/
 *.pt
 *.pth
 .env
+videos/
