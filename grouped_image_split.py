@@ -29,8 +29,8 @@ def split_images(source_dir, destination_dir, num_splits):
             shutil.copyfile(source_path, destination_path)
 
 if __name__ == '__main__':
-    source_dir = 'Dataset/Export_MotorDatasetOpenImages/data'
-    destination_dir = 'Dataset/Export_MotorDatasetOpenImages/split'
-    num_splits = 3
+    source_dir = 'Dataset/Export_PersonDataset/data'
+    destination_dir = 'Dataset/Export_PersonDataset/split'
+    num_splits = 4
 
     split_images(source_dir, destination_dir, num_splits)
